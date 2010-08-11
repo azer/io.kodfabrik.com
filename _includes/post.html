@@ -1,0 +1,37 @@
+<div class="Post Article">
+  {% if page.quote %}
+  <div class='Body Quote'>
+  {% else %}
+  <h1><a href='{{ page.url }}'>{{ page.title }}</a></h1>
+  <div class='Body'>
+  {% endif %}
+  {% if content %}
+  {{ content }}
+  {% else %}
+    {{ page.content }}
+  {% endif %}
+  </div>
+  <div class='Footer'> 
+    
+    <div class='Author'>
+    Author: 
+    {% if page.author %}
+      <a href='{{ page.author_link }}'>{{ page.author }}</a>
+    {% else %}
+      <a href='{{ site.author_link }}'>{{ site.author }}</a>
+    {% endif %}
+    </div>
+
+    {{ page.date | "date_to_long_string" }}
+
+    <div class="Tags"> 
+      Tags:
+      {% for cat in page.categories %}
+      <a href='/tags/{{ cat }}.html'>{{ cat }}</a>
+      {% endfor %}
+    </div>
+
+    <a href='{{ site.url }}{{ page.url }}' class='Permalink'>Permalink</a>
+      
+  </div> 
+</div>

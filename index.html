@@ -1,0 +1,18 @@
+---
+layout: default
+title: Homepage
+name: home
+---
+
+<div class="Nav"> 
+  <span class='Arrow'>‣</span> 
+  <a href="http://kodfabrik.com">Homepage</a> 
+  <span class='Arrow'>‣</span> 
+  Blog
+</div> 
+
+<div class='Articles'>
+  {% for page in site.posts %} 
+  {% include post.html %}
+  {% endfor %}
+</div>

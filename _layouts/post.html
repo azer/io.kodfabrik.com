@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<script>var disqus_developer=1;</script>
+<div class="Nav"> 
+  <span class='Arrow'>‣</span> 
+  <a href="http://kodfabrik.com">Homepage</a> 
+  <span class='Arrow'>‣</span> 
+  <a href='/'>Blog</a>
+</div> 
+
+<div class='Articles'>
+{% include post.html %}
+</div>
+
+<div class="Comments Article">
+    <h1>Comments</h1>
+    <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/koculu/embed.js"></script><noscript><a href="http://disqus.com/forums/koculu/?url=ref">View the discussion thread.</a></noscript>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+  var links = document.getElementsByTagName('a');
+  var query = '?';
+  for(var i = 0; i < links.length; i++) {
+  if(links[i].href.indexOf('#disqus_thread') >= 0) {
+    query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+  }
+  }
+  document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/koculu/get_num_replies.js' + query + '"></' + 'script>');
+});
+//]]>
+</script>

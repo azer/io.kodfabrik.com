@@ -1,0 +1,7 @@
+auto: false
+url: http://sl510/sites/io.kodfabrik.com/_site
+permalink: /:year/:month/:day/:title.html
+pygments: true
+
+author: Azer Koçulu
+author_link: http://azer.kodfabrik.com
