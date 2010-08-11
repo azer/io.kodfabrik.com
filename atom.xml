@@ -4,11 +4,11 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Azer's Technical Shares</title>
- <link href="http://azer.kodfabrik.com/atom.xml" rel="self"/>
- <link href="http://azer.kodfabrik.com"/>
+ <title>Kodfabrik Blog</title>
+ <link href="http://io.kodfabrik.com/atom.xml" rel="self"/>
+ <link href="http://io.kodfabrik.com"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://azer.kodfabrik.com</id>
+ <id>http://io.kodfabrik.com</id>
  <author>
    <name>Azer Koculu</name>
    <email>azerkoculu@gmail.com</email>
