@@ -1,5 +1,5 @@
 auto: false
-url: http://sl510/sites/io.kodfabrik.com/_site
+url: http://io.kodfabrik.com
 permalink: /:year/:month/:day/:title.html
 pygments: true
 
