@@ -17,15 +17,15 @@ layout: default
 title: Postings tagged "#{category}"
 ---
     <div class="Nav"> 
-      <span class='Arrow'>‣</span> 
+      <span class='Arrow'>&#8227;</span> 
       <a href="http://kodfabrik.com">Homepage</a> 
-      <span class='Arrow'>‣</span> 
+      <span class='Arrow'>&#8227;</span> 
       <a href='/'>Blog</a>
-      <span class='Arrow'>‣</span>
+      <span class='Arrow'>&#8227;</span>
       Tags
-      <span class='Arrow'>‣</span> 
+      <span class='Arrow'>&#8227;</span> 
       #{category}
-    </div> 
+    </div>
     {% for page in site.categories.#{category} %}
       {% include post.html %}
     {% endfor %}
