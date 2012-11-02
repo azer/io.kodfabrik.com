@@ -6,4 +6,5 @@ deploy:
 	$(MAKE) build
 
 setup:
+	mkdir tags
 	$(MAKE) build
