@@ -1,5 +1,9 @@
-all:
-	jekyll
+build:
+	rake tags
+	jekyll ../public
 
-publish:
-	cp -r _site/* ~/www/io.kodfabrik.com/public/.
+deploy:
+	$(MAKE) build
+
+setup:
+	$(MAKE) build
